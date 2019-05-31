@@ -1,0 +1,426 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#popup {
+  z-index: 99999;
+}
+
+#bg {
+  /*background-image: url('GustoB&W_2Kw.png'); */
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: block;
+  overflow: scroll;
+  width: 100%;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.mobileHero {
+    display: none;
+}
+
+.master_container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* .home_info {
+  position: relative;
+  width: 100%;
+} */
+
+.master_container h1 {
+  color: white;
+  font-size: 65px;
+  margin: -55px 0px 0px 0px;
+}
+
+
+.button {
+  background-color: black /* #D4AF37*/;
+  border: none;
+  border-radius: 8px;
+  border: 2px solid white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  height: 50px;
+  width: 150px;
+  color: #BE8900;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #B22222;
+  color: white;
+}
+
+.home_buttons a {
+  text-decoration: none;
+}
+/* About Page */
+
+#split_container {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.left_page {
+  background-image:url('barber.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  overflow: scroll;
+  width: 45%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.left_page_contact {
+  background-image:url('barber.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  overflow: scroll;
+  width: 45%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.right_page {
+  background-image:url('GustoCuts.png');
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  width: 55%;
+  height: 100%;
+}
+
+.right_map {
+  float: left;
+  width: 55%;
+  height: 100%;
+}
+
+.about_line {
+  width: 30%;
+  height: 3px;
+  margin: 0 auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  background: #BE8900;
+}
+
+.left_page img {
+  display: block;
+  margin: 0 auto;
+}
+
+.left_page h1 {
+  font-size: 5em;
+  color: white;
+}
+
+.left_page p {
+  margin: 40px 70px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.about_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.footer ul li {
+  list-style: none;
+  float: left;
+}
+
+.footer ul li a {
+  margin: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: #B22222;
+}
+
+.footer_contact {
+  margin: 10px;
+}
+
+/* Contact Page */
+.content {
+  display: block;
+  overflow: scroll;
+  margin-left: 158px;
+}
+
+.content h2 {
+  color: white;
+  font-size: 18px;
+}
+
+.content a {
+  color: #B22222;
+}
+
+div a {
+  color: white;
+}
+
+div ul li {
+  list-style: none;
+  color: #888;
+}
+
+.content_mobile {
+  display: none;
+}
+
+.footer_nav ul {
+  padding: 0;
+}
+/* END Contact Page */
+
+
+.contact_image {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.contact_image img {
+  width: 100%;
+  height: 300px;
+}
+
+.contact_image_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+}
+
+.contact_content {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+
+.map {
+  float: left;
+}
+
+.map_mobile {
+  display: none;
+}
+
+.contact_info {
+  float: left;
+  margin-left: 20px;
+}
+
+.contact_info ul {
+  list-style: none;
+}
+
+.contact_info a {
+  text-decoration: underline;
+}
+
+/* ------ iPhone 4 - 5SE ------ */
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+
+  .button {
+    height: 50px;
+    padding: 10px 0px;
+  }
+
+  .mobileHero {
+    display: block;
+    padding-right: 100px;
+  }
+  
+  .footer ul li a {
+    font-size: 12px;
+  }
+}
+
+/* ------ iPhone 6+, 7+ and 8+ ------ */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    #myVideo {
+      display: none;
+    }
+
+    .mobileVideo {
+      display: block;
+    }
+
+    #bg {
+      background-image:url('barber.png');
+    }
+
+    .home_info img {
+      content: url(GC_logo_gold_100.png);
+    }
+
+    .master_container {
+      margin-top: 20px;
+      overflow: scroll;
+    }
+
+    .master_container div h1 {
+      display: none;
+    }
+    
+    .mobileHero {
+      display: block;
+      max-width: 100%;
+      padding-bottom: 10px;
+    }
+    
+    .mobileVideo {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .button {
+      width: 90%;
+      border-radius: 20px;
+    }
+    /* About Page */
+    .left_page {
+      width: 100%;
+    }
+
+    .right_page {
+      display: none;
+    }
+
+    /* Contact Page */
+    .content {
+      display: none;
+    }
+
+    .content_mobile {
+      display: block;
+    }
+
+    .left_page_contact h1 {
+      margin: 0px;
+    }
+
+    .map_mobile {
+        display: block;
+    }
+
+}
+/* ------ iPad ------ */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  header {
+    margin-top: 20px;
+  }
+
+  .mobileHero {
+    display: none;
+  }
+  
+  .home_buttons {
+    margin-top: 50px;
+  }
+
+ /* .button {
+    width: 70%;
+    margin: 10px;
+  }
+*/
+  .footer ul li {
+    float: none;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .vertical_bar {
+    display: none;
+  }
+
+  .right_page {
+    background-image:url('GustoCutsiPad.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+  }
+
+  /* Contact Page */
+  .left_page_contact {
+    width: 50%;
+  }
+
+  .right_map {
+    width: 50%;
+  }
+
+  .content {
+    margin-left: 65px;
+  }
+
+  .content_mobile {
+    display: none;
+  }
+}
+
+/* ------ Galaxy S5 ----- */
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+
+  .button {
+    margin: 5px 10px;
+  }
+}
