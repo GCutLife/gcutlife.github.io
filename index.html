@@ -21,7 +21,10 @@
     <link rel="stylesheet" href="gusto.css" type="text/css">
     <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
 
+    <!-- Mailchimp email popup-->
   <script id="popup" type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us18.list-manage.com","uuid":"2a87385bfe0dbca77b1121931","lid":"204845b86e"}) })</script>
+    <!--END Mailchimp email popup-->
+
   <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -42,45 +45,39 @@
 </head>
 
 <body>
-
-  <section id="bg">
-
-    <video playsinline autoplay muted loop id="myVideo">
-      <source src="GustoPromoCropped.mp4" type="video/mp4">
-    </video>
-
-    <div class="master_container">
-        <!-- HEADER LOGO -->
-        <div class="home_info">
-          <img src="GC__gold_logo_500w.png" alt="gusto logo">
-        </div>
-        <!-- IMAGE FOR MOBILE -->
-        <div class="mobileHero">
-            <img src="lineup.png" width="100%">
-        </div>
-
-        <div>
-            <h1>G Cut Grooming</h1>
-            <h3 style="color: white; text-align: center;">&#40;APPOINTMENT ONLY&#58; Use BOOK ME button below&#41;</h3>
-        </div>
-        <div class="home_buttons" style="text-align:center;">
-          <a href="/about">
-              <button type="button" class="button">About</button>
-          </a>
-         <!-- <a href="">
-              <button type="button" class="button">Shop &#40;coming soon&#41;</button>
-          </a> -->
-          <a href="https://www.styleseat.com/p/1168609/fromwidget?badge=button">
-              <button type="button" class="button" style="background-color: #BE8900; color: white;">Book Me</button>
-          </a>
-          <a href="/contact">
-              <button type="button" class="button">Contact</button>
-          </a>
-          <a href="https://www.instagram.com/gustocuts/">
-              <button type="button" class="button">Instagram</button>
-          </a>
-        </div>
+    <div id="bg" class="overlay">
+  
+      <!-- Button to close overlay -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+      <!-- Overlay Content -->
+      <div class="overlay_content">
+        <a href="/index"><img src="GC__gold_logo_500w.png" alt="gusto logo" style="width: 10%"></a>
+        <a href="/about">ABOUT</a>
+        <a href="https://www.styleseat.com/p/1168609/fromwidget?badge=button">BOOK ME</a>
+        <a href="/contact">CONTACT</a>
+        <a href="https://www.instagram.com/gustocuts/">INSTAGRAM</a>
+      </div>
     </div>
-  </section>
-</body>
-</html>
+  
+    <span class="hamburger" style="font-size: 50px; cursor: pointer; color: var(--blue)" onclick="openNav()">&#9776;</span>
+  
+    <!-- END PAGE NAV OVERLAY -->
+
+  
+    <script src="lll-site.js"></script>
+    <script>
+      /* Open */
+      function openNav() {
+        document.getElementById("bg").style.display = "block";
+      }
+  
+      /* Close */
+      function closeNav() {
+        document.getElementById("bg").style.display = "none";
+      }
+    </script>
+  
+  </body>
+  </html>
+  
