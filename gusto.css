@@ -33,9 +33,9 @@ width: 100%;
 }
 
 .container {
-  position: relative;
+  position: fixed;
   top: 70%;
-  left: 30%;
+  left: 36%;
 }
 
 #myVideo {
@@ -87,9 +87,11 @@ width: 100%;
 }
 
 span {
-  float: right;
   padding: 50px;
+  position: fixed;
+  left: calc(100% - 150px);
 }
+
 .mobileHero {
     display: none;
 }
