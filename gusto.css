@@ -365,7 +365,12 @@ div ul li {
 
 /* ------ iPhone 6+, 7+ and 8+ ------ */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-
+    
+    .container {
+      left: 15%;
+      width: 70%;
+    }
+  
     #myVideo {
       display: none;
     }
