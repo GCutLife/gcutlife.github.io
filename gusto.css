@@ -41,8 +41,8 @@ width: 100%;
 
 .callout {
   position: fixed;
-  top: calc(9% );
-  left: calc(100% - 222px);
+  top: calc(7% );
+  left: calc(100% - 260px);
 }
 
 .arrow {
