@@ -41,14 +41,17 @@ width: 100%;
 
 .callout {
   position: fixed;
-  top: calc(7% );
-  left: calc(100% - 260px);
+  top: calc(9% );
+  left: calc(100% - 222px);
+}
+
+.callout p {
+  animation: pulse 1s infinite;
 }
 
 .arrow {
-  font-size: 45px;
+  font-size: 30px;
   color:red;
-  animation: pulse 1s infinite;
 }
 
 @keyframes pulse {
